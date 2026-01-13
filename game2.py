@@ -15,7 +15,7 @@ clear_color = (30, 150, 30)
 WIDTH, HEIGHT = 800, 600
 sprite_folder = "/Users/h/projectspy/rpg/sprite"
 
-# ---------------- AUDIO ----------------
+# AUDIO
 SONG_PARTS = [
     pygame.mixer.Sound(os.path.join(sprite_folder, f"song_part_{i}.wav"))
     for i in range(1, 11)
@@ -40,7 +40,7 @@ def load_sprite(name, size):
 font = pygame.font.SysFont(None, 40)
 small_font = pygame.font.SysFont(None, 28)
 
-# YOU WIN TEXT (ONLY ADDED)
+# YOU WIN TEXT
 win_text = pygame.font.SysFont(None, 96).render("YOU WIN", True, (255, 255, 0))
 win_rect = win_text.get_rect(center=(WIDTH // 2, HEIGHT // 2))
 
